@@ -6,10 +6,17 @@ metadata:
 spec:
   project: default
 
-  source:
-    repoURL: https://github.com/vickybgr787/ecommerce-platform.git
-    targetRevision: main
-    path: helm/order-service
+  sources:
+    - repoURL: https://github.com/vickybgr787/ecommerce-platform.git
+      targetRevision: main
+      path: helm/order-service
+      helm:
+        valueFiles:
+          - $values/environments/dev/order-service-values.yaml
+
+    - repoURL: https://github.com/vickybgr787/ecommerce-gitops.git
+      targetRevision: main
+      ref: values
 
   destination:
     server: https://kubernetes.default.svc
