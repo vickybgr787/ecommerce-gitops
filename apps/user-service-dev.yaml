@@ -3,13 +3,21 @@ kind: Application
 metadata:
   name: user-service-dev
   namespace: argocd
+
 spec:
   project: default
 
-  source:
-    repoURL: https://github.com/vickybgr787/ecommerce-platform.git
-    targetRevision: main
-    path: helm/user-service
+  sources:
+    - repoURL: https://github.com/vickybgr787/ecommerce-platform.git
+      targetRevision: main
+      path: helm/user-service
+      helm:
+        valueFiles:
+          - $values/environments/dev/user-service-values.yaml
+
+    - repoURL: https://github.com/vickybgr787/ecommerce-gitops.git
+      targetRevision: main
+      ref: values
 
   destination:
     server: https://kubernetes.default.svc
