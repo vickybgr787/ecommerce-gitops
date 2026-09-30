@@ -1,4 +1,4 @@
 image:
   repository: ecommercedevacr787.azurecr.io/frontend
-  tag: "fe886f6eb534fa32b2af2acac2efe7106f62cbad"
+  tag: "5e9371847f854d2c943306347c4df27c13cf4f46"
   pullPolicy: IfNotPresent
