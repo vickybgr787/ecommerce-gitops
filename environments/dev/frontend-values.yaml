@@ -1,4 +1,4 @@
 image:
   repository: ecommercedevacr787.azurecr.io/frontend
-  tag: "PLACEHOLDER"
+  tag: "0284a0a6e80c8e6c8acc542a307427097cafe3ec"
   pullPolicy: IfNotPresent
