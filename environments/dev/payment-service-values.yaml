@@ -1,4 +1,4 @@
 image:
   repository: ecommercedevacr787.azurecr.io/payment-service
-  tag: "90a9f4c1d35e9336c7980f2d4b1abcb9784178c6"
+  tag: "b4db811eac601959dcfdf0f3b43112aa0d8a8218"
   pullPolicy: IfNotPresent
