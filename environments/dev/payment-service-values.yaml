@@ -1,4 +1,4 @@
 image:
   repository: ecommercedevacr787.azurecr.io/payment-service
-  tag: "PLACEHOLDER"
+  tag: "b2588973a911d2156d9e696c8851253abeb8c58b"
   pullPolicy: IfNotPresent
