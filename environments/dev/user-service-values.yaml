@@ -1,4 +1,4 @@
 image:
   repository: ecommercedevacr787.azurecr.io/user-service
-  tag: "5d383975b206afb31cd799f6ca681f136873a8ea"
+  tag: "fbb4331bbf934032319aef25c65e962a303eb74f"
   pullPolicy: IfNotPresent
